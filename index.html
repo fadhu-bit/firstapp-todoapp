@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>To Do</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="blobs" aria-hidden="true"><span></span><span></span><span></span></div>
+
+  <main class="app">
+    <header class="header">
+      <h1>To Do</h1>
+      <p id="counter" class="counter">0 items left</p>
+    </header>
+
+    <div class="progress" aria-hidden="true"><div id="progress-bar" class="progress-bar"></div></div>
+
+    <form id="add-form" class="add-form" autocomplete="off">
+      <input id="new-task" type="text" placeholder="What needs to be done?" aria-label="New task" maxlength="200" autofocus>
+      <button id="add-btn" type="submit" class="add-btn" aria-label="Add task"><span class="plus">+</span></button>
+    </form>
+
+    <nav id="filters" class="filters" aria-label="Filter tasks">
+      <span id="filter-pill" class="filter-pill" aria-hidden="true"></span>
+      <button type="button" data-filter="all" class="active">All</button>
+      <button type="button" data-filter="active">Active</button>
+      <button type="button" data-filter="completed">Completed</button>
+    </nav>
+
+    <ul id="list" class="list"></ul>
+
+    <div id="empty" class="empty">
+      <div class="empty-icon">📝</div>
+      <p></p>
+    </div>
+
+    <footer class="footer">
+      <button id="clear-completed" type="button" class="clear-btn">Clear completed</button>
+    </footer>
+  </main>
+
+  <div id="all-done" class="all-done" role="status">All tasks complete! 🎉</div>
+  <div id="fx" class="fx" aria-hidden="true"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
