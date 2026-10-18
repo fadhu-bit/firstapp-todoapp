@@ -38,3 +38,7 @@ open index.html   # macOS. On other systems, open index.html in any browser.
 ## How it works
 
 Each task is stored as `{ id, text, done, createdAt }` in an array that is saved to `localStorage` after every change. The list is updated item by item rather than redrawn as a whole, so each task can animate in and out on its own. The effects use CSS keyframes and the Web Animations API.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
