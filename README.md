@@ -2,6 +2,10 @@
 
 A simple, animated to-do list app built with plain HTML, CSS and JavaScript. It has no frameworks and no build step.
 
+<p align="center">
+  <img src="docs/demo.gif" alt="Adding three tasks and completing them, with confetti and an all-done celebration" width="480">
+</p>
+
 ## Features
 
 - **Add, complete, edit and delete tasks.** Double-click a task to edit it.
@@ -31,6 +35,7 @@ open index.html   # macOS. On other systems, open index.html in any browser.
 
 ```
 ├── index.html   # Page layout
+├── docs/demo.gif # README demo recording
 ├── styles.css   # Styling, theming and CSS animations
 └── app.js       # Task logic, storage, rendering and JS-driven effects
 ```
